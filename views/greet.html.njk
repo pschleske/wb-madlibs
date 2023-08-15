@@ -5,11 +5,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Greetings | Madlibs!</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    {# <link rel="stylesheet" href="/css/styles.css" /> #}
   </head>
 
   <body>
     <h1>Nice to meet you, {{ name }}.</h1>
+    <p> You're very {{ compliment }}. </p>
   </body>
+
+  <form action="/game"> 
+    <p> Would you like to play a game? </p>
+
+    <input type="radio" name="play" value="yes" id="yes-input"/>
+    <label for="yes-input"> Yes </input>
+
+    <input type="radio" name="play" value="no" id="no-input"/>
+    <label for="no-input"> No </input>
+
+    <button type="submit"> Let's Go!</button>
+  </form>
 
 </html>
